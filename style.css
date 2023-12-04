@@ -1,0 +1,21 @@
+.img{
+    background-image: url( https://i.postimg.cc/kXY0vcCf/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    position: relative;
+
+    z-index:5;
+    
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(8, 26, 116, 0.529);
+}
